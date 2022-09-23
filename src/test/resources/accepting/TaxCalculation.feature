@@ -11,7 +11,3 @@ Funcionalidade: Calcular imposto com uma taxa de 6% em cima do valor da nota lan
     Dado os parâmetros da nota razão social "Rafael Tecnologia S.A". mês da nota emitida "092022", valor 25000
     Então taxa de imposto sobre a nota deve ser no valor de 1500
     E valor de lucro liquido de ser de 23500
-
-  Exemplo
-  |nota|
-  |{"corporateName": "Rafael Tecnologia S.A","month":"092022","value":"25000" }|
