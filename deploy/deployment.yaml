@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accountng-tax
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: accounting-tax
+  template:
+    metadata:
+      labels:
+        app: accounting-tax
+    spec:
+      containers:
+        - name: accounting-tax-container
+          image: rafaelnsiqueira/accounting:1.0.0
+          env:
+            - name: "REDIS_HOST"
+              value: "redis-service"
+            - name: "REDIS_PORT"
+              value: "9000"
