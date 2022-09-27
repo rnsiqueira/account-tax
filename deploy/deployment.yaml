@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: accountng-tax
+  name: accounting-tax-deployment
 spec:
-  replicas: 4
+  replicas: 12
   selector:
     matchLabels:
       app: accounting-tax
@@ -13,5 +13,7 @@ spec:
         app: accounting-tax
     spec:
       containers:
-        - name: accounting-tax-container
-          image: rafaelnsiqueira/accounting:1.0.1
+        - name: accounting-tax
+          image: rafaelnsiqueira/accounting-tax:1.0.1
+          ports:
+            - containerPort: 8080
