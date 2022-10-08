@@ -23,8 +23,8 @@ public class Invoice implements Serializable {
     private Long id;
     @Column(name = "corporative_name")
     private String corporativeName;
-    @Column(name = "month")
-    private String month;
-    @Column(name = "value")
-    private double value;
+    @Column(name = "generation_month")
+    private String generationMonth;
+    @Column(name = "calc_value")
+    private double calcValue;
 }

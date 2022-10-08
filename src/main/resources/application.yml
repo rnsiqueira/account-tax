@@ -1,4 +1,5 @@
 server:
+  context-path: '/practicing'
   port: 8080
 
 
@@ -9,10 +10,17 @@ spring:
       connectionTimeout: 20000
       maximumPoolSize: 5
     url: jdbc:postgresql://localhost:5432/accounting
+    driverClassName: org.postgresql.Driver
     username: postgres
-    password: 123
+    password: test
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false
     hibernate:
       ddl-auto: none
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/accounting
+    driverClassName: org.postgresql.Driver
+    user: postgres
+    password: test
+    change-log: "db/changelog/db.changelog-master.sql"
