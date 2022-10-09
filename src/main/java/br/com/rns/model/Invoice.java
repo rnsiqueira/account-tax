@@ -15,7 +15,8 @@ import java.io.Serializable;
 public class Invoice implements Serializable {
 
 
-    private static final long serialVersionUID = 4243419218870619096L;
+    private static final long serialVersionUID = 1088407771257439764L;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)

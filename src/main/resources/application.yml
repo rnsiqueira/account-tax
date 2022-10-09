@@ -1,6 +1,7 @@
 server:
-  context-path: '/practicing'
-  port: 8080
+  servlet:
+    context-path: '/accounting-tax'
+  port: 9090
 
 
 spring:
@@ -24,3 +25,7 @@ spring:
     user: postgres
     password: test
     change-log: "db/changelog/db.changelog-master.sql"
+
+jwt:
+  secret: 'javeiro'
+  jwtExpirationMs: 86400000

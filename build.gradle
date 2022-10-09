@@ -19,11 +19,7 @@ repositories {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.22'
-    // https://mvnrepository.com/artifact/junit/junit
-    testImplementation 'junit:junit:4.13.2'
-    testImplementation 'io.cucumber:cucumber-junit:7.8.1'
-    testImplementation 'io.cucumber:cucumber-core:7.8.1'
-    testImplementation 'io.cucumber:cucumber-spring:7.8.1'
+    testImplementation 'junit:junit:4.13'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     // https://mvnrepository.com/artifact/com.h2database/h2
     testImplementation 'com.h2database:h2:2.1.214'
@@ -32,6 +28,9 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
     // https://mvnrepository.com/artifact/org.liquibase/liquibase-core
     implementation 'org.liquibase:liquibase-core:4.16.1'
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
@@ -41,5 +40,5 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+    useJUnit()
 }
