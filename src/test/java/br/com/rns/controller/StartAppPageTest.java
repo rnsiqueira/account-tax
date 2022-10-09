@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -24,6 +25,7 @@ public class StartAppPageTest {
     private MockMvc mvc;
 
 
+    @WithMockUser(value = "spring")
     @Test
     public void returnBodyStartAppPage() throws Exception {
         MockHttpServletResponse response = this.mvc.perform(get("/init")).andReturn().getResponse();
