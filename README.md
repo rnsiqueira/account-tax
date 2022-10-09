@@ -1,6 +1,6 @@
 - Accounting Tax Service
 
-Objective: micro serviço para calculo de importo sobre notas
+Objective: micro serviço para calculo de imposto sobre notas
 
 
 Scope:
