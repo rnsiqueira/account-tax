@@ -11,7 +11,7 @@ mainClassName = 'br.com.rns.ApplicationStart'
 
 
 group 'br.com.rns'
-version '1.0.0'
+version '1.0.1'
 
 repositories {
     mavenCentral()
