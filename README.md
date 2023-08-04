@@ -1,9 +1,8 @@
 - Accounting Tax Service
 
-Objective: micro serviço para calculo de imposto sobre notas
-
+Objective: Tax calc service.
 
 Scope:
-1. aplicação vai rodar em um container docker e será orquestrado pelo kubernetes.
+1. app should run in kubernetes.
 
 
