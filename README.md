@@ -1,8 +1,6 @@
 - Accounting Tax Service
 
-Objective: Tax calc service.
-
-Scope:
-1. app should run in kubernetes.
+Objective:
+1. An app of test to run in kubernetes.
 
 
